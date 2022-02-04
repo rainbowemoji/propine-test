@@ -1,0 +1,30 @@
+{
+  "name": "2b-boilerplate",
+  "version": "1.0.0",
+  "description": "_We're looking at your programming ability. It must not only work, it should be maintainable._",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node .",
+    "dev:start": "npm run start",
+    "dev": "nodemon --watch src -e ts,ejs --exec npm run dev:start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/csv-parse": "^1.2.2",
+    "@types/objects-to-csv": "^1.3.1",
+    "nodemon": "^2.0.15",
+    "tsc": "^2.0.4",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@types/node": "^17.0.14",
+    "axios": "^0.25.0",
+    "csv-parse": "^5.0.4",
+    "objects-to-csv": "^1.3.6",
+    "ts-node": "^10.4.0"
+  }
+}
